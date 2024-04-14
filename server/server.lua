@@ -4,6 +4,6 @@ local QBCore = exports['qb-core']:GetCoreObject()
 QBCore.Functions.CreateUseableItem(Config.Item, function (source, item)
     if item then
         print('nazu-fingerprint')
-        TriggerClientEvent("qb-police:client:scanFingerPrint", source)
+        TriggerClientEvent(Config.event, source)
     end
 end)
